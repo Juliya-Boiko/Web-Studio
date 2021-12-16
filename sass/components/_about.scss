@@ -1,0 +1,38 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list__item {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-list__image {
+  display: block;
+}
+
+.about-list__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  background-color: rgba($main-color-shadow, 0.8);
+}
+
+.about-list__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $secondary-color;
+}

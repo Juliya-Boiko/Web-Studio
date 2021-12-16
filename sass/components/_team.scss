@@ -1,0 +1,38 @@
+.team {
+  background-color: $secondary-color-shadow;
+}
+
+.team-list {
+  display: flex;
+  text-align: center;
+}
+
+.team-list__item {
+  background-color: $secondary-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: $box-shadow;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-list__description {
+  padding: 30px 0;
+}
+
+.team-list__name {
+  margin-bottom: 10px;
+
+  color: $main-color-shadow-var2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-list__position {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.2;
+}
