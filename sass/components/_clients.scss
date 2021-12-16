@@ -1,14 +1,26 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients__item {
+  width: calc(100% / 2 - 15px);
+
   margin-right: 30px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  margin-bottom: 30px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 .client__link {
   display: block;
-  padding: 16px 32px;
+  padding: 16px 52px;
+  // padding: 16px 32px;
   border: 1px solid;
   border-color: $secondary-color-shadow-var2;
   border-radius: 4px;

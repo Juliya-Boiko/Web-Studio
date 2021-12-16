@@ -1,14 +1,19 @@
-.description-list {
-  display: flex;
-  justify-content: space-between;
-}
+// .description-list {
+//   // display: flex;
+//   // justify-content: space-between;
+// }
 
 .description-list__item {
-  width: 270px;
+  &:not(:last-child) {
+    margin-bottom: 56px;
+  }
+  // width: 270px;
 }
 
 .description-list__image {
-  padding: 25px 100px;
+  max-width: 450px;
+  padding: 25px 190px;
+  // padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -18,14 +23,16 @@
 .description-list__title {
   margin-bottom: 10px;
 
-  color: $main-color-shadow-var2;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+
+  color: $main-color-shadow-var2;
 }
 
 .description-list__text {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }

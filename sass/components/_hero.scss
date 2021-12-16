@@ -1,17 +1,19 @@
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 200px 0;
+  // max-width: 1600px;
+  // margin: 0 auto;
+
+  padding: 118px 0;
+  // padding: 200px 0;
 
   background-color: $main-color-shadow;
-  background-image: linear-gradient(
-      to right,
-      rgba($main-color-shadow, 0.4),
-      rgba($main-color-shadow, 0.4)
-    ),
-    url(../images/bgi-hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba($main-color-shadow, 0.4),
+  //     rgba($main-color-shadow, 0.4)
+  //   ),
+  //   url(../images/bgi-hero.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
   text-align: center;
 }
 
@@ -21,7 +23,9 @@
   color: $secondary-color;
   letter-spacing: 0.06em;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.62;
+  // font-size: 44px;
+  // line-height: 1.4;
   text-transform: uppercase;
 }

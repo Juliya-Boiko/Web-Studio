@@ -3,14 +3,18 @@
   margin-top: 12px;
 }
 
-.footer-subscribe__form {
-  display: flex;
-}
+// .footer-subscribe__form {
+//   // display: flex;
+// }
 
 .footer-subscribe__input {
   display: inline-block;
-  min-width: 358px;
-  margin-right: 12px;
+
+  width: 100%;
+  // min-width: 358px;
+
+  margin-bottom: 20px;
+  // margin-right: 12px;
   padding: 15px 16px;
 
   @include bordered(rgba($secondary-color, 0.3));

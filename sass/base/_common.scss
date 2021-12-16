@@ -6,22 +6,28 @@
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  // width: 1200px;
+
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  // padding: 94px 0;
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  // margin-bottom: 50px;
 
   color: $main-color-shadow-var2;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  // font-size: 36px;
+
+  line-height: 1.17;
   text-align: center;
 }
 
