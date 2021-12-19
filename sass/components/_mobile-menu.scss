@@ -1,0 +1,49 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $secondary-color;
+
+  transition: opacity 300ms ease-in-out;
+}
+
+.menu-content {
+  position: relative;
+  padding: 48px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-content-bottom {
+  margin-top: auto;
+}
+
+.mobile-menu__tel {
+  display: block;
+  margin-bottom: 32px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.mobile-menu__email {
+  display: block;
+  margin-bottom: 64px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $main-color-shadow-light;
+}

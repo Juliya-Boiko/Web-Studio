@@ -7,22 +7,22 @@
   background-position: center;
 
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(
-        to right,
-        rgba($main-color-shadow, 0.4),
-        rgba($main-color-shadow, 0.4)
-      ),
-      url(../../images/bgi-hero-480.jpg);
+    // background-image: linear-gradient(
+    //     to right,
+    //     rgba($main-color-shadow, 0.4),
+    //     rgba($main-color-shadow, 0.4)
+    //   ),
+    //   url(../../images/bgi-hero-480.jpg);
     background-size: cover;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: linear-gradient(
-        to right,
-        rgba($main-color-shadow, 0.4),
-        rgba($main-color-shadow, 0.4)
-      ),
-      url(../../images/bgi-hero-768.jpg);
+    // background-image: linear-gradient(
+    //     to right,
+    //     rgba($main-color-shadow, 0.4),
+    //     rgba($main-color-shadow, 0.4)
+    //   ),
+    //   url(../../images/bgi-hero-768.jpg);
     background-size: cover;
   }
 
