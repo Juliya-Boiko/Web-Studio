@@ -1,20 +1,41 @@
 .hero {
-  // max-width: 1600px;
-  // margin: 0 auto;
-
+  margin: 0 auto;
   padding: 118px 0;
-  // padding: 200px 0;
-
   background-color: $main-color-shadow;
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba($main-color-shadow, 0.4),
-  //     rgba($main-color-shadow, 0.4)
-  //   ),
-  //   url(../images/bgi-hero.jpg);
-  // background-repeat: no-repeat;
-  // background-position: center;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba($main-color-shadow, 0.4),
+        rgba($main-color-shadow, 0.4)
+      ),
+      url(../../images/bgi-hero-480.jpg);
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba($main-color-shadow, 0.4),
+        rgba($main-color-shadow, 0.4)
+      ),
+      url(../../images/bgi-hero-768.jpg);
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba($main-color-shadow, 0.4),
+        rgba($main-color-shadow, 0.4)
+      ),
+      url(../images/bgi-hero.jpg);
+    max-width: 1600px;
+  }
 }
 
 .hero__title {

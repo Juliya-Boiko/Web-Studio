@@ -1,20 +1,29 @@
 .footer-subscribe {
-  margin-left: auto;
   margin-top: 12px;
 }
 
-// .footer-subscribe__form {
-//   // display: flex;
-// }
+.footer-subscribe__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 
 .footer-subscribe__input {
   display: inline-block;
 
   width: 100%;
-  // min-width: 358px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   margin-bottom: 20px;
-  // margin-right: 12px;
   padding: 15px 16px;
 
   @include bordered(rgba($secondary-color, 0.3));
