@@ -1,10 +1,11 @@
 .mobile-menu--is-hidden {
-  opacity: 0;
-  transform: translateY(100%);
-  pointer-events: none;
+  // opacity: 0;
+  // transform: translateY(100%);
+  // pointer-events: none;
 }
 
 .mobile-menu {
+  // display: flex;
   position: absolute;
   top: 0;
   z-index: 5;
@@ -14,6 +15,12 @@
   background-color: $secondary-color;
 
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+
+  &.is-open {
+    // opacity: 0;
+    // transform: translateY(100%);
+    display: none;
+  }
 }
 
 .menu-content {

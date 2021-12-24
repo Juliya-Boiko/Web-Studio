@@ -79,9 +79,11 @@
   }
 }
 
-.menu-open-button {
-  display: inline-flex;
-  margin-left: auto;
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 10;
   padding: 0;
   border: none;
 
@@ -93,6 +95,18 @@
   &:hover,
   &:focus {
     fill: $accent-color;
+  }
+
+  .icon-close {
+    opacity: 0;
+  }
+
+  &.is-open .icon-close {
+    opacity: 1;
+  }
+
+  &.is-open .icon-menu {
+    opacity: 0;
   }
 
   @media screen and (min-width: 767px) {
@@ -100,23 +114,44 @@
   }
 }
 
-.menu-close-button {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+// .menu-open-button {
+//   display: inline-flex;
+//   margin-left: auto;
+//   padding: 0;
+//   border: none;
 
-  display: inline-flex;
-  margin-left: auto;
-  padding: 0;
-  border: none;
+//   background-color: transparent;
 
-  background-color: transparent;
+//   cursor: pointer;
+//   transition: fill $transition-prop;
 
-  cursor: pointer;
-  transition: fill $transition-prop;
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//   }
 
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
+//   @media screen and (min-width: 767px) {
+//     display: none;
+//   }
+// }
+
+// .menu-close-button {
+//   position: absolute;
+//   top: 10px;
+//   right: 15px;
+
+//   display: inline-flex;
+//   margin-left: auto;
+//   padding: 0;
+//   border: none;
+
+//   background-color: transparent;
+
+//   cursor: pointer;
+//   transition: fill $transition-prop;
+
+//   &:hover,
+//   &:focus {
+//     fill: $accent-color;
+//   }
+// }
