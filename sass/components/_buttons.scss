@@ -27,7 +27,6 @@
 }
 
 .primary-button--flex {
-  @extend .primary-button;
   display: flex;
   align-items: center;
 }

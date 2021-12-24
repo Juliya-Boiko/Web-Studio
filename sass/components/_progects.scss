@@ -6,6 +6,8 @@
 }
 
 .projects__item {
+  display: flex;
+  flex-direction: column;
   transition: box-shadow $transition-prop;
   border-radius: 0px 0px 4px 4px;
   width: 100%;
@@ -106,6 +108,7 @@
 }
 
 .projects__description {
+  flex-grow: 1;
   @include bordered($main-color-shadow-var3);
   padding: 20px 24px;
 }

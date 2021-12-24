@@ -6,8 +6,10 @@
 }
 
 .description-list__item {
-  &:not(:last-child) {
-    margin-bottom: 56px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -16,13 +18,14 @@
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
-    &:not(:nth-child(-n + 2)) {
+
+    &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
     }
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: calc(100% / 4 - 23px);
+    max-width: calc((100% - 90px) / 4);
     margin-bottom: 0;
 
     &:not(:last-child) {

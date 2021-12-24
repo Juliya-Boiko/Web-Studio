@@ -1,14 +1,10 @@
-.footer-subscribe {
-  margin-top: 12px;
-}
-
-.footer-subscribe__form {
+.subscribe-form {
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
-.footer-subscribe__input {
+.subscribe-form__input {
   display: inline-block;
 
   width: 100%;

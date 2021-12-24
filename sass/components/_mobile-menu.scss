@@ -1,13 +1,19 @@
+.mobile-menu--is-hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
   z-index: 5;
   width: 100vw;
   height: 100vh;
-
+  transform: translateX(0);
   background-color: $secondary-color;
 
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .menu-content {
