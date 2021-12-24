@@ -1,6 +1,6 @@
 .mobile-menu--is-hidden {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
   pointer-events: none;
 }
 
@@ -10,7 +10,7 @@
   z-index: 5;
   width: 100vw;
   height: 100vh;
-  transform: translateX(0);
+  transform: translateY(0);
   background-color: $secondary-color;
 
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
