@@ -1155,6 +1155,7 @@ p {
 }
 
 .mobile-menu.is-open {
+  transform: translateY(100%);
   display: none;
 }
 
