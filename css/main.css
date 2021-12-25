@@ -1147,12 +1147,6 @@ p {
   padding: 20px 24px;
 }
 
-.mobile-menu--is-hidden {
-  opacity: 0;
-  transform: translateY(100%);
-  pointer-events: none;
-}
-
 .mobile-menu {
   position: fixed;
   bottom: 0;
