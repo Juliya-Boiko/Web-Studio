@@ -79,11 +79,11 @@
   }
 }
 
-.menu-button {
+.menu-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 10;
+  z-index: 12;
   padding: 0;
   border: none;
 
@@ -100,13 +100,17 @@
   .icon-close {
     opacity: 0;
   }
-
-  &.is-open .icon-close {
+  .icon-menu {
     opacity: 1;
   }
 
-  &.is-open .icon-menu {
-    opacity: 0;
+  &--is-open {
+    .icon-close {
+      opacity: 1;
+    }
+    .icon-menu {
+      opacity: 0;
+    }
   }
 
   @media screen and (min-width: 767px) {

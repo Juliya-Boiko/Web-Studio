@@ -18,14 +18,14 @@
         <div class="container header__content">
             <a href="./index.html" class="logo">Web<span class="logo__studio--primary">Studio</span></a>
 
-            <button type="button" class="menu-button js-open-menu js-close-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+            <button type="button" class="menu-btn" data-mobile-btn aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
                     <use href="./images/icons.svg#icon-close" class="icon-close"></use>
                 </svg>
             </button>
 
-            <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
+            <div class="mobile-menu mobile-menu--is-hidden" data-menu-container id="mobile-menu">
                 <div class="menu-content">
                     <div class="menu-content-top">
                         <!-- <button class="menu-close-button">
@@ -551,9 +551,12 @@
             </form>
         </div>
     </div>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 
