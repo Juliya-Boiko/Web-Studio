@@ -8,7 +8,12 @@
     flex-wrap: wrap;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
+  }
+
   @media screen and (min-width: 1200px) {
+    margin: 0 -15px 0 -15px;
     flex-wrap: nowrap;
   }
 }
@@ -18,26 +23,20 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: $box-shadow;
 
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc(100% / 2 - 15px);
-
-    &:not(:nth-child(2n)) {
-      margin-right: 30px;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: calc((100% - 90px) / 4);
-    margin-bottom: 0;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin: 0 15px 0 15px;
   }
 }
 

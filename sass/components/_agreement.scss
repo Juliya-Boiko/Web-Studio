@@ -23,8 +23,11 @@
 .agreement__icon {
   display: inline-block;
   margin-right: 8px;
-  width: 16px;
-  height: 15px;
+  @media screen and (max-width: 479px) {
+    margin-right: 16px;
+  }
+  min-width: 16px;
+  height: 16px;
   border: 2px solid $main-color-shadow-var2;
   border-radius: 2px;
   transition: background-color $transition-prop,

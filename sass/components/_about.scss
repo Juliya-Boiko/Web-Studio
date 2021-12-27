@@ -6,6 +6,7 @@
 }
 
 .about-list {
+  margin: -15px;
   display: flex;
   justify-content: space-between;
 }
@@ -15,6 +16,7 @@
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 15px;
 }
 
 .about-list__image {
