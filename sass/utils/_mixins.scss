@@ -1,3 +1,16 @@
 @mixin bordered($color) {
   border: 1px solid $color;
 }
+
+@mixin hero-bgi($url, $withGrad: true) {
+  @if withGrad {
+    background-image: linear-gradient(
+        to right,
+        rgba($main-color-shadow, 0.4),
+        rgba($main-color-shadow, 0.4)
+      ),
+      url($url);
+  } @else {
+    background-image: url($url);
+  }
+}

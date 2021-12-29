@@ -2,14 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   margin: -8px;
-  // @media screen and (max-width: 767px) {
-
-  // }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
+
 .filters__item {
   margin: 8px 0 8px 8px;
 }
